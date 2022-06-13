@@ -1,0 +1,274 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[scale=0.85]{geometry}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{apacite}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\textbf{\Large \scshape \textcolor{black}{Colegio de Estudios Superiores de Administración - CESA}}\\
+Undergraduate Program in Business Administration\\
+    \\ \vspace{1pt}
+Emphasis in Advanced Analytics\\
+Syllabus - Course \# 01882 - 2022-1; Semester: 2021-2.\\
+Academic Coordinator: Alvaro Moncada, Ph.D. $|$ Email: \href{mailto:amoncada@cesa.edu.co}{\textcolor{blue}{amoncada@cesa.edu.co}} \\
+Principal Professor: Juan C. Correa, Ph.D. $|$ Email: \href{mailto:juan.correan@cesa.edu.co}{\textcolor{blue}{juan.correan@cesa.edu.co}} \\
+Assistant Professor: Nicolás Gomez-Osoario, MsSc $|$ Email: \href{mailto:ngomezo@cesa.edu.co}{\textcolor{blue}{ngomezo@cesa.edu.co}} \\
+
+
+\begin{picture}(0,0)
+\put(465,30){\includegraphics[width=2.5cm]{OL.png}}
+\end{picture}
+
+\begin{center}
+\textbf{The Business Data Analytics Course}\\
+\textbf{Teaching Note}
+\end{center}
+
+\section{1. Overview}
+In several business schools, the link between leadership skills and organizational settings always emerges as one of the most important topics for the future generation of managers (i.e., students enrolled in an undergraduate business administration program). The problem with this link is that it omits the relevance of data for any manager nowadays. Indeed, moving from unstructured data (e.g., customers' written reviews on e-commerce platforms) to structured data (customers' ratings in a data set) and then to information and knowledge is not as evident as it might seem (Teichert et al., 2020). From a data analytics perspective, it has no sense to inspire and lead people with ideas only. Data and evidence have the most significant credibility in a complex world that demands data-driven decisions to avoid improvisation. This teaching note aims to illustrate the conceptual approaches for defining data, information, and knowledge (Zins, 2007) and how this helps undergraduate students why learning Python through Jupyter notebooks and GitHub Repositories they gain a competitive advantage in the labor market. For the instructor, the lesson is that these are convenient means to deal with two problems related to teaching business analytics at the undergraduate level: students’ engagement and technology adoption and usage (Williams \& Elmore, 2021).
+
+\section{2. Topics, Key Issues, and Questions}
+From the first session, the business data analytic course elaborates upon the practical difference between data, information, and knowledge (Zins, 2007). The instructor can repeat the following mantra: ``\textit{As a manager, you can take data (as an array of alphanumeric characters) and summarize it computationally  (with statistical tables and graphs) to realize the meaning of this information and frame it as practical knowledge}.'' For the first four sessions, this mantra won't be immediately evident for students. Between session 2 and 4, the course introduces the idea of strategic decision-making through a data analytics simulation developed and published by Davenport (2016). Although the simulator does not require Python or GitHub Repos (Molin, 2021; Schwarz et al., 2020), it provides an intuitive learning experience of how brand managers for a laundry detergent can use dashboards with data summarized in appealing statistical graphs to understand current issues and determine the best strategy for improving performance. In session 5 and 6, the course presents Anaconda-navigator and GitHub desktop, respectively. At this point of the course, the instructor can highlight why the adoption of these tools represent a competitive advantage for managers running small and medium businesses with limited cash flow. In particular, the instructor can ask the students to discuss their opinions for the following question: ``\textit{if you had to decide between licensed software and free and open-source software, which one is most likely to be selected and why? Does this decision have a financial impact on the daily cash flow of your firm}?'' Apart from these reflections, at this point of the course, the instructor points out the existence of different data sources such as Kaggle, Google Data Search, Harvard Data Verse, datadryad, European Social Survey, or dataone, to mention just a few. The exposition of these data sources is helpful for students to regard them as strategic resources that will help them gain credibility when they need to integrate facts into the pitches they generate to attract angel investors for their entrepreneurship endeavors.\\
+\vspace{0.3cm}
+By teaching how to use GitHub desktop and Jupyter notebooks, the instructor can now introduce other important topics, such as knowledge hierarchy as defined by Rowley (2007) and its relationship with Zins' distinction between data, information, and knowledge. The course proceeds by introducing the topic of data visualization through the well-known cases of Simpson's Paradox and Anscombe's quartet, already implemented by the principal professor in two Jupyter notebooks. These cases help students understand why statistical tables and graphs are compatibly summarizing tools. The course illustrates the topic of data collection through three different means: application programming interface (API), web scraping, and data sources. \\
+\vspace{0.3cm}
+To illustrate the use of API's, the instructor provides a research case related with Twitter as a political marketing data collection tool (Correa \& Camargo, 2017). To teach web scraping, the instructor provides a research case on the trust-sales consistency in the leading Latin-American E-commerce platform (Correa et al., 2021). And the topic of data sources goes with another couple of research cases: one related to online food delivery services (Correa et al., 2019; Segura \& Correa, 2019) and the other related to consumers' disposition to use automated banking services (Correa et al., 2022). \\
+\vspace{0.3cm}
+To stimulate students' questioning sessions, debates, and guided forums, the instructor can invite at least two or three guest lectures  (i.e., consultants, data analysts, heads of business intelligence units, or data scientists working for a varied set of sectors, including telecommunication, cloud computing services, or data-oriented solutions). The instructor can use these research cases several times throughout the course to illustrate other computational tasks such as data cleaning, data wrangling, and data retrieval with SQL-like syntaxes implemented through Pandas-based functions in Python (Molin, 2021; Shmueli et al., 2020). The instructor can explain that Python has the capability of performing the same functions that Oracle SQL developer or Microsoft SQL server with libraries such as SQLAlchemy, and explain why these capabilities are not going to be fully covered in the course given the limited time available during the semester and the range of topics included in the course. These observations, however, should be used to illustrate the difference between a data analyst, a data scientist, and a data engineer, and how these differences are valued in the market (\url{https://databricks.com/learn/training/learning-paths}).
+% \newpage
+\section{3. Learning Objectives}
+
+The instructor needs to distinguish the principal learning objective of this course from the specific learning objectives for each of the four research cases. This distinction does not necessarily assume that the research cases are conceptually connected. Although they all rely on Python, and GitHub features that make students experience a more agile and hands-on lesson, some topics overlap. For example, data visualization and data manipulation are common in all research cases. The instructor should notify this to prevent students from misleading perceptions that topics are repetitive.\\
+\vspace{0.3cm}
+The principal learning objective for this course is as follows: ``\textit{At the end of this course, you will understand how any manager provides value to the firm by identifying the computational steps required to differentiate data from information and information from knowledge.}'' This differentiation mirrors the conceptual approaches for defining data, information, and knowledge as explained by Zins (2007), and it provides the basic principles for the concept of wisdom hierarchy (Rowley, 2007) as the framework that any manager should learn. Thus, the primary learning outcome for students is to show how they can transform data sets into meaningful and powerful information displayed as statistical tables and graphs that, in turn, help them get fresh insights for knowledge discovery. The concept of knowledge discovery helps stimulate curiosity and critical thinking. For example, the instructor should expect students to provide their point of view regarding the pros and cons of Excel or Python compared with other data-analytics software, including R-RStudio, Jasp, jamovi, or SPSS. \\
+\vspace{0.3cm}
+When working with Python, the instructor can highlight how the combination of standard Python libraries such as Pandas, matplotlib, or seaborn, does not prevent the use of other libraries such as beautiful soup, twitter, or altair. In data visualization, for example, it is good to stimulate students' creativity to manipulate Python's syntaxes to generate colors, shapes, legends, font size, and other features that demonstrate their ability to produce customized outputs in the form of statistical tables or graphs. The instructor should model how to use StackOverflow and other forums as reliable and valid resources for Python enthusiasts who wish to increase their programming skills. Rather than fomenting memorizing as the default learning strategy, the instructor can stimulate students' critical thinking to understand how they should approach the technical documentation of Python libraries. The instructor should be aware that students with less experience or a poor detail-oriented competence tend to rely on copying-and-pasting specific codes available in StackOverflow as this habit guarantees the solution for them. Another good practice that the instructor should encourage is to lead students to look for and clone as many GitHub repos as they find on the web. When students see different codes and syntaxes, this exposition will help them understand how people cope with similar challenges differently. By stimulating this practice, the instructor will see exciting opportunities for implementing the course.\\
+\vspace{0.3cm}
+The learning objective for the first research case, Online Food Delivery Services (Correa et al., 2019), is to understand the concept of data mining as an applied tool that integrates different data sources to reveal the relationship between traffic conditions (as captured by Google Maps) and food delivery fulfillment (by contrasting customers' ratings and expected delivery times). The instructor should expect that students can ``translate'' the original codes written in R into Python equivalent codes. For example, students should be able to show how to open a dataset from R and Python, and how to generate a simple statistical graph such as histograms or boxplots, and how to perform basic data cleaning tasks such as changing the name of column or droping missing values in a data set. \\
+\vspace{0.3cm}
+The learning objective for the second research case, web scraping data from the leading Latin-American E-commerce platform (Correa et al., 2021), is to understand how to collect relevant data from E-commerce platforms and use it to understand countries' differences in terms of vendors' trust reputation. As conducting web scraping for a regional website such as Mercadolibre far exceeds students' capacity to develop web scrapers on their own, the learning outcome for students is to run a predefined tiny web scraping model developed by the principal professor that allows them to get data from a Pokemon website. The instructor should highlight the importance of following technical tasks such as vieweing websites in HTML mode with Google Chrome Developer Tool, and understand HTML and Cascading Style Sheets (CSS) as markup language tools.\\
+\vspace{0.3cm}
+The learning objective for the third research case, Twitter as a political marketing tool (Correa \& Camargo, 2017), is to understand how social networks and the interactions of their users are unstructured data inputs that are susceptible to statistical analyses with practical goals such as quantifying the predictive value of tweets or retweets for candidates running for governors election. The learning outcome for this research case, is to understand and reproduce the technical steps required to access Twitter API's capabilities and retrieve a sample of tweets from any Twitter account.\\
+\vspace{0.3cm}
+The learning objective for the fourth research case, low-income consumers’ disposition to use automated banking services (Correa et al., 2022), is to understand the value of data collected with surveys for identifying possible ways of financial inclusion that the banking sector can follow to achieve economic reactivation in a post-pandemic era.
+
+
+
+\section{4. Implementation}
+
+The target audience for this course is the population of undergraduate students who took and approved three previous subjects: ``\textit{statistics and probability},'' ``\textit{applied statistics},'' and ``\textit{computational modeling}.'' In \textit{statistics and probability}, students learn the topics of a standard descriptive statistics course including central tendency, variation, and shape statistics, basic tabulation and graphs, hypothesis testing, and statistical significance for bivariate analyses (i.e., Student's t test, Analysis of Variance, Mann-Whitney U test, Pearson, Spearman, and Kendall correlation). In \textit{applied statistics}, students learn multivariate statistical techniques (both parametric and non-parametric), including multiple regression, analysis of variance, and classification. Finally, in \textit{computational modeling}, students learn the concept of variables, loops, iterations, and their application for basic tasks such as true-and-false validations, basic arithmetic and algebraic operations (scalar and matrix sums and multiplications). Most students know how to use Microsoft Excel, SPSS, or Python for these purposes.\\
+\vspace{0.3cm}
+The difficulty level for the business data analytics course starts with expositions that assume no previous knowledge from students. The welcoming session and the three subsequent sessions with the data analytics simulator developed by Davenport (2016) are pretty easy to follow, as they do not represent any challenge. From session five and beyond, the difficulty level increases, first by demanding students explore data sources, download at least one data set, and understand the variables contained in it. The instructor should demand the exploration of data sources (see section 5.1 below). 
+
+\subsection{Content-based Modules per Week}
+\begin{itemize}
+\item \textbf{Week 1}. Welcoming Session (session 1), Simulator Presentation (session 2)
+\item \textbf{Week 2}. Business Data Analytics Simulator (session 3 and 4)
+\item \textbf{Week 3}. Business Data Analytics Toolbox: Anaconda (session 5) and GitHub Desktop (session 6)
+\item \textbf{Week 4}. Data Sources, Data sets (session 7) and Wisdom Hierarchy  (session 8)
+\item \textbf{Week 5}. Data Visualization (session 9) and \textbf{First Partial Exam} (session 10)
+\item \textbf{Week 6}. Twitter API as data source (session 11) and Web Scraping (session 12)
+\item \textbf{Week 7}. Data Manipulation Tasks (session 13 and 14)
+\item \textbf{Week 8}. Applied Data Mining Methods (session 15 and 16)
+\item \textbf{Week 9}. Case Study 1: Online Food Delivery Services (session 17 and 18)
+\item \textbf{Week 10}. Case Study 2: Trust-Sales in Latin American E-Commerce (session 19 and 20)
+\item \textbf{Week 11}. \textbf{Second Partial Exam} (session 21) Exam feedback (session 22)
+\item \textbf{Week 12}. Business Analytics in the real world (session 23) and Guests from the Industry (session 24)
+\item \textbf{Week 13}. Guests from the Industry (session 25) and Case Study 3: Political Marketing (session 26)
+\item \textbf{Week 14}. Case Study 4: Disposition to Use Automated Baking Services (session 27), Final Exam Preparation (session 28)
+\item \textbf{Week 15}. Final Exam (session 29 and 30)
+\item \textbf{Week 16}. Closing Week (session 31) and Final exam feedback (session 32)
+\end{itemize}
+
+\subsection{Evaluation Plan}
+Mastering data analytics techniques requires continuous exposure to challenges and guided workshops. The course has three evaluation activities: two partial exams, a minimum series of four workshops, and a final exam. In partial exams, the instructor should evaluate a combination of conceptual understanding of topics and practice-oriented exercises that demand students' ability to look for, analyze, summarize, and write fresh data-driven insights. Workshops, in contrast, aim to provide learning experiences that focus on solving unstructured data analysis problems. Unlike partial exams, workshops do not assess conceptual knowledge. Students should hand in their workshops in Jupyter notebooks (i.e., the only valid file format is .ipynb), and they can do so by uploading them to the learning management system (e.g., Canvas, Blackboard, Moodle) or by sending them via e-mail. Table \ref{T1} summarizes the distribution of evaluation activities.
+
+\begin{table}[h!]
+\centering
+\caption{Evaluated activities \& weights}
+\label{T1}
+\begin{tabular}{|l|c|}
+\hline
+~~Activity &~~\multicolumn{1}{l|}{Percentage~~} \\ \hline
+~~Partial Exam 1~~&~~15                              \\ \hline
+~~Partial Exam 2~~&~~15                              \\ \hline
+~~Workshops~~&~~50                              \\ \hline
+~~Final Exam~~&~~20                              \\ \hline
+\end{tabular}
+\end{table}
+
+It should be evident that workshops alone are more critical than partial exams combined or the final exam. The rationale for this distribution of evaluation activities is pretty strategic. First, it conveys the message that partial exams are secondary compared to the series of workshops that students should hand in several times during the semester. The instructor should ask for at least one workshop on the following critical topics: APIs, web scraping, data cleaning, data visualization, univariate statistical analysis, bivariate statistical analysis, and presentation of executive reports.
+\newpage
+The textbook of Molin (2021) provides examples of standard functions provided by Python libraries such as Pandas, matplotlib, and seaborn. The instructor should encourage students to use these functionalities and investigate on Internet how to extend or customize these functionalities by consulting forums or StackOverflow. \\
+\vspace{0.3cm}
+Grading through rubrics is unnecessary as each workshop relies on the student's preference for a specific data source and data set, and this freedom of choice generates a wide arrange of problems that are difficult to grade with a rubric or a predefined set of grading criteria. Nonetheless, the instructor should provide clear and specific instructions for each workshop or exam to reduce the risk of subjective gradings. Specific instructions should include but not be limited to establishing specific file format conditions for students' workshop submissions (define dates and hours in the learning management system), video-based quizzes with tools such as PlayPosit, readings checks, watching, and discussing Youtube videos, and announcements through the learning management system. When grading students' workshops, the instructor should evaluate the quality of solutions in two or three performance categories. The best performance category shows students' ability to go beyond the codes available in textbooks or StackOverflow solutions. The average performance category shows a solution that required copying and pasting existing codes from textbooks or StackOverflow. Performance below average reveals that the student could not understand which code was adequate for a data analytics problem. Other quality features should include conciseness and clarity when communicating data-driven insights and manipulation of aesthetic features in tables and graphs, so the Jupyter notebook reveals an outstanding orientation to communication purposes. The final exam shares the exact purpose of partial exams, but it allows students to submit their assignments beyond Jupyter notebooks, which opens the possibility for using RStudio, jasp, jamovi, or any other software. Each evaluation activity is graded in a scale from zero (the student did not complete the activity) to 10 (the student revealed an outstanding performance).
+
+
+
+\begin{itemize}
+\item[1] The course is approved with a minimum grading of \textbf{6.0 out of 10.0}. The maximum possible grading is \textbf{10.0}.
+\item[2] Partial exams and workshops will be done individually or in teams as informed by the professor. They are previously scheduled and communicated at the begining of the semester. \textbf{Students are not exempted from the final exam} because this is designed to assess the global knowledge and ability that the student gained during the course.
+\item[3] The difficulty of evaluation activities will be increased as a function of time and student progress during the course. 
+\end{itemize}
+
+
+\section{5. Suggested Solutions and Reference Materials}
+\begin{itemize}
+\item Correa, J.C. \& Camargo, J. (2017). Ideological Consumerism in Colombian Elections: Links between Political Ideology, Twitter Activity and Electoral Results. \textit{Cyberpsychology, Behaviour, and Social Networking}, \textit{20}(1), 37 – 43. doi: DOI: 10.1089/cyber.2016.0402
+\item Correa, J.C., Garzón, W., Brooker, P., Sakarkar, G., Carranza, S., Yunado, L. \& Rincón, A. (2019). Evaluation of Collaborative Consumption of Online Food Delivery Services through Web Mining Techniques. \textit{Journal of Retailing and Consumer Services}, \textit{46}, 45-50. DOI:10.1016/j.jretconser.2018.05.002
+\item Correa, J. C., Laverde-Rojas, H., Martínez, C. A., Camargo, O. J., Rojas-Matute, G. \& Sandoval-Escobar, M. (2021). The Consistency of Trust-Sales Relationship in Latin American E-Commerce. \textit{Journal of Internet Commerce}. (Online First). DOI: 10.1080/15332861.2021.1975426
+\item Correa, J.C., Dakduk, S., van der Woude, D., Sandoval-Escobar, M. \& López, R. (2022). Low-Income Consumers’ Disposition to Use Automated Banking Services. \textit{Cogent Business \& Management}, \textit{9}(1), 2071099 DOI: 10.1080/23311975.2022.2071099
+\item Davenport, T. (2016). Data Analytics Simulation: Strategic Decision Making. Harvard Business Publishing Education 7050. Boston: MA: Harvard Business School.
+\item Laverde-Rojas, H. \& Correa, J.C. (2019). Can Scientific Productivity Impact the Economic Complexity of Countries? \textit{Scientometrics, 120}(1), 267-282. 
+\item Molin, S. (2021). \textit{Hands-on Data Analysis with Pandas} (2nd Edition). Birmingham: Packt Publishers
+\item Rowley, J. (2007). The wisdom hierarchy: representations of the dikw hierarchy. \textit{Journal of Information Science, 33}(2), 163–180. doi: 10.1177/0165551506070706
+\item Schwarz, J. S., Chapman, C., \& Feit, E. M. (2020). \textit{Python for marketing research and analytics}. Cham, Switzerland. Springer Nature. 
+\item Segura, M. A. \& Correa, J.C. (2019). Data of Collaborative Consumption in Online Food Delivery Services. \textit{Data in Brief, 25}, 104007. DOI: 10.1016/j.dib.2019.104007
+\item Shmueli, G., Bruce, P. C., Gedeck, P., \& Patel, N. R. (2020). \textit{Data mining for business analytics: Concepts, techniques, and applications in Python}. New Jersey, USA: Wiley & Sons 
+\item Teichert, T., Rezaei, S. \& Correa, J.C. (2020). Customers’ experiences of fast food delivery services: Uncovering the semantic core benefits, actual and augmented product by text mining. \textit{British Food Journal}, \textit{122}, (11), 3513-3528. DOI: 10.1108/BFJ-12-2019-0909
+\item Williams, B., \& Elmore, R. (2021). Teaching Business Analytics during the COVID-19 Pandemic: A Tale of Two Courses. \textit{Communications of the Association for Information Systems, 48}, 32-39. 
+\item Zins, C. (2007). Conceptual approaches for defining data, information, and knowledge. \textit{Journal of the American Society for Information Science and Technology}, \textit{58}(4), 479–493. DOI: 10.1002/asi.20508
+\end{itemize}
+
+
+
+
+\subsection{5.1 Online Resources}
+\textcolor{blue}{\url{https://github.com/stefmolin/Hands-On-Data-Analysis-with-Pandas-2nd-edition}}
+
+\textcolor{blue}{\url{https://github.com/jcorrean/mypythonadventure}}
+
+\textcolor{blue}{\url{https://www.kaggle.com/}}
+
+\textcolor{blue}{\url{https://rda.ucar.edu/}}
+
+\textcolor{blue}{\url{https://datadryad.org/stash}}
+
+\textcolor{blue}{\url{http://archive.eso.org/cms.html}}
+
+\textcolor{blue}{\url{https://www.dataone.org/}}
+
+\textcolor{blue}{\url{https://figshare.com/}}
+
+\textcolor{blue}{\url{https://www.icpsr.umich.edu/web/pages/}}
+
+\textcolor{blue}{\url{https://www.re3data.org/}}
+
+\textcolor{blue}{\url{https://ciser.cornell.edu/data/data-archive/}}
+
+\textcolor{blue}{\url{https://dataverse.harvard.edu/}}
+
+\textcolor{blue}{\url{https://www.europeansocialsurvey.org/}}
+
+% \bibliographystyle{apacite}
+% \bibliography{refs}
+\end{document}
